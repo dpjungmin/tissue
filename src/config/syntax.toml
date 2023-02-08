@@ -1,0 +1,38 @@
+[[language]]
+name = "rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+language-server = "rust-analyzer"
+debugger = "lldb-vscode"
+
+[[language]]
+name = "c"
+file-types = ["c"]
+roots = []
+language-server = "clangd"
+debugger = "lldb-vscode"
+
+[[language]]
+name = "cpp"
+file-types = ["cc", "c++", "cpp", "h", "hh", "hpp"]
+roots = []
+language-server = "clangd"
+debugger = "lldb-vscode"
+
+[[language]]
+name = "lua"
+file-types = ["lua"]
+roots = [".luarc.json", ".luacheckrc", ".stylua.toml"]
+language-server = "lua-language-server"
+
+[[language]]
+name = "python"
+file-types = ["py", "pyi", "py3"]
+roots = []
+language-server = "pylsp"
+
+[[language]]
+name = "java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle"]
+language-server = "jdtls"
